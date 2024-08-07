@@ -1,0 +1,26 @@
+h1 {
+  font-weight: 650;
+  text-align: center;
+  margin: 10px;
+}
+
+h1:hover {
+  color: chartreuse;
+  font-weight: 800;
+}
+
+#container {
+  border: 3px solid darkslategrey;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px;
+  min-width: 300px;
+}
+
+#container input {
+  width: 400px;
+  border: 2px solid black;
+  margin: 8px;
+  padding: 10px;
+  text-align: center;
+}

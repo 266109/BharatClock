@@ -1,0 +1,32 @@
+.il {
+  color: crimson;
+  margin: 3px;
+  padding: 3px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.il:hover {
+  background-color: cornflowerblue;
+  color: #fff;
+  font-weight: 900;
+}
+
+.btn {
+  width: 250px;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: beige;
+}
+
+.btn:hover {
+  background-color: darkslategray;
+  color: aliceblue;
+}
+
+.ab {
+  background-color: darkorange;
+}
