@@ -22,29 +22,29 @@
 #         run: npm install
 #       - name: Project Run
 #         run: npm run dev
-name: Deploy to GitHub Pages
+# name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches: [master]
+# on:
+#   push:
+#     branches: [master]
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+#     steps:
+#       - uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: npm install
+#       - name: Install dependencies
+#         run: npm install
 
-      # - name: Build
-      #   run: npm run build
-      - name: dev run
-        run: npm run dev
-      # - name: Deploy
-      #   uses: actions/deploy@v1
-      #   with:
-      #     provider: pages
-      #     # github-token: ${{ secrets.GITHUB_TOKEN }}
-      #     folder: build
+#       # - name: Build
+#       #   run: npm run build
+#       - name: dev run
+#         run: npm run dev
+#       # - name: Deploy
+#       #   uses: actions/deploy@v1
+#       #   with:
+#       #     provider: pages
+#       #     # github-token: ${{ secrets.GITHUB_TOKEN }}
+#       #     folder: build
