@@ -1,0 +1,36 @@
+name: Run Vite Project Locally
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-serve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "21"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Start Vite server
+        run: npm run dev &
+        env:
+          PORT: 3000
+          HOST: 0.0.0.0
+
+      - name: Wait for Vite server to start
+        run: |
+          sleep 10
+          curl http://localhost:3000
