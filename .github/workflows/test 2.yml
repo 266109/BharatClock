@@ -1,4 +1,4 @@
-name: Test Project
+name: Test Project 2
 on: push
 jobs:
   test:
@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 21
       - name: Install Dependencies
-        run: npm i
+        run: npm ci
       - name: install vitest
         run: npm i vitest
       - name: Run Test
