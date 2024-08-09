@@ -27,7 +27,7 @@ jobs:
       - name: Start Vite server
         run: npm run dev &
         env:
-          PORT: 3000
+          PORT: 5173
           HOST: 0.0.0.0
 
       - name: Wait for Vite server to start
